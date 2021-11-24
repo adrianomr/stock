@@ -6,4 +6,4 @@ spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
 
 spring:
   redis:
-    url: ${REDIS_URL}
+    url: redis://localhost:6379
