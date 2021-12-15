@@ -31,7 +31,7 @@ public class GetStockData {
                     .ticker(ticker)
                     .price(BigDecimal.valueOf(price))
                     .build();
-        } catch (IOException e) {
+        } catch (Exception e) {
             log.error("Unable to find stock price for: {}", ticker, e);
             throw new StockDataNotFound("Unable to find stock price for:" + ticker);
         }
